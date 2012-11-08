@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<section id="about">
+  <header><h1><a href="/">Édouard Brière</a></h1></header>
+	<p>Hello, I’m a web developer and entrepreneur. I created <a href="https://webtranslateit.com">WebTranslateIt.com</a>.</p>
+	<p>You can read more <a href="/about">about me</a>, and you can find me on <a href="https://twitter.com/edouardbriere">Twitter</a>,
+	<a href="https://github.com/edouard">Github</a> and <a href="mailto:edouard@atelierconvivialite.com">Email</a>.</p>
+	<hr>
+</section>
+
+{% if site.posts.any? %}
+<section id="posts">
+	<h1>Posts</h1>
+	<ol>
+	  {% for post in site.posts %}
+	    <li>
+				<a href="{{ post.url }}">{{ post.title }}</a> » {{ post.description }} <span class="date">{{ post.date | date_to_string }}</span>
+			</li>
+	  {% endfor %}
+	</ol>
+</section>
+{% endif %}

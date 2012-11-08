@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {% if page.title %}
+        {{ page.title }} &mdash; Édouard Brière
+      {% else %}
+        Personal Homepage for Édouard Brière
+      {% endif %}
+        </title>
+      <meta name="description" content="Personal Homepage for Édouard Brière" />
+      <meta name="keywords" content="edouard briere developer france" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+      <link rel="shortcut icon" href="/images/avatar.png" />
+      <link rel="stylesheet" media="all" href="/styles/style.css" />
+      <script type="text/javascript" src="//use.typekit.net/ydn7ast.js"></script>
+      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link rel="alternate" href="/atom.xml" title="Édouard Brière" type="application/atom+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body lang="en" class="tk-myriad-pro">
+    {{ content }}
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-8257304-10']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>

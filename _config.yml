@@ -1,0 +1,5 @@
+pygments: true
+auto: false
+server: false
+markdown: kramdown
+permalink: pretty
