@@ -37,17 +37,18 @@ body {
   padding: 50px;
 	font-size: small;
 	color: #333;
- 	background: url('/images/bg.png') top left repeat #FFF;
+ 	background: #f7f7fa;
  	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+  text-shadow: 0 1px 0 #fff;
 }
 
 a {
-  color: #2D76B9;
+  color: #2382c8;
 	text-decoration: none;
 }
 a:hover {
-  color: #2D76B9;
+  color: #2382c8;
   text-decoration: underline;
 }
 
@@ -124,6 +125,15 @@ hr {
 p.date {
   font-size: 130% !important;
   color: #666;
+}
+
+img.avatar
+{
+  position: relative;
+  float: right;
+  border: 6px solid #FFF;
+  width: 150px;
+  margin-left: 10px;
 }
 
 /* Tablet */
