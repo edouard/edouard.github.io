@@ -17,6 +17,9 @@ set :deploy_to,    "/web/sites/edouardbriere.fr/"
 
 before 'deploy:update', 'deploy:update_jekyll'
 
+ssh_options[:forward_agent] = true
+default_run_options[:pty] = true
+
 namespace :deploy do
 
   [:start, :stop, :restart, :finalize_update].each do |t|
