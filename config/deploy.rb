@@ -4,16 +4,16 @@ set :scm,               :none
 set :deploy_via,        :copy
 set :copy_compression,  :gzip
 set :use_sudo,          false
-set :host,              'gandalf.atelierconvivialite.com'
+set :host,              'gandalf4.atelierconvivialite.com'
 
 role :web,  host
 role :app,  host
-role :db,   host, :primary => true
+role :db,   host, primary: true
 
 set :user,    'edouard'
 set :group,   user
 
-set :deploy_to,    "/web/sites/edouardbriere.fr/"
+set :deploy_to,    "/var/sites/edouardbriere.fr/"
 
 before 'deploy:update', 'deploy:update_jekyll'
 
